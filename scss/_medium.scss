@@ -1,0 +1,27 @@
+header {
+  padding: 2rem $gutter;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+  }
+
+}
+
+nav ul li a {
+  border-bottom:none;
+}
+
+nav ul li.active a {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+// main
+
+section {
+  grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,35 @@
+header,
+nav,
+main,
+footer {
+  max-width: 60rem;
+  margin: auto;
+}
+
+section {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+nav {
+  ul.navLinks, ul.navLinks.open {
+    justify-content: flex-end;
+    display:flex;
+    li a {
+      margin: 0;
+      padding: 0.6rem 1rem;
+      border:none;
+    }
+    li.active a {
+      color: $fontColor;
+      text-decoration: underline;
+      text-underline-offset: 12px;
+    }
+  }
+}
+
+#navButton {
+  display:none;
+}
+
+ul.navLinks li a {
+
+}
