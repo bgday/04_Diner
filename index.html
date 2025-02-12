@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Start File | Brian Day Dev</title>
+    <title>04 Diner | Brian Day Dev</title>
     <meta name="description" content="Brian Day's start file" />
     <meta name="author" content="Brian Day" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet" />
 
     <!--fav icon-->
@@ -27,7 +24,7 @@
           ><img
             src="./images/logo1x.png"
             alt="logo"
-            width="50"
+            width="28"
             height="50"
             srcset="
               ./images/logo1x.png 1x,
@@ -35,7 +32,7 @@
               ./images/logo3x.png 3x
             "
         /></a>
-        <h1>Day Architecture</h1>
+        <h1>Daylight Diner</h1>
       </header>
     </div>
 
@@ -44,19 +41,16 @@
         <button id="navButton"></button>
         <ul class="navLinks">
           <li class="active">
-            <a href="#"><span class="activeSpan">Our Work</span></a>
+            <a href="#"><span class="activeSpan">Dine with Us</span></a>
           </li>
           <li>
-            <a href="#"><span class="inactiveSpan">Conventions</span></a>
+            <a href="#"><span class="inactiveSpan">Menu</span></a>
           </li>
           <li>
-            <a href="#"><span class="inactiveSpan">Jobs</span></a>
+            <a href="#"><span class="inactiveSpan">About Us</span></a>
           </li>
           <li>
-            <a href="#"><span class="inactiveSpan">About</span></a>
-          </li>
-          <li>
-            <a href="#"><span class="inactiveSpan">Partners</span></a>
+            <a href="#"><span class="inactiveSpan">Contact</span></a>
           </li>
         </ul>
       </nav>
@@ -64,50 +58,114 @@
 
     <div id="mainWrapper">
       <main>
-        <h1>Our Work</h1>
+        <h1>Magna’s Best Classic Diner</h1>
+        <div class="allCards">
+          <div>
+            <section>
+              <h2>Comfortable Seating</h2>
+              <img
+                src="./images/booths.webp"
+                alt="diner booths"
+                width="300"
+                height="175"
+              />
+              <p>
+                Relax and enjoy your meal in our cozy booths and comfy
+                chairs—good food tastes better when you’re comfortable!
+              </p>
+              <a href="">Learn More</a>
+            </section>
+          </div>
+          <div>
+            <section>
+              <h2>Quick Bites</h2>
+              <img
+                src="./images/counter.webp"
+                alt="diner counter"
+                width="300"
+                height="175"
+                class="e2e"
+              />
 
-        <picture class="hero">
-          <source
-            media="(max-width:700px)"
-            srcset="./images/chicagoSkyline-S.webp"
-          />
-          <source
-            media="(max-width:1100px)"
-            srcset="./images/chicagoSkyline-M.webp"
-          />
-          <img src="./images/chicagoSkyline-L.webp" alt="Chicago skyline" />
-        </picture>
-
-        <video controls>
-          <source src="./media/Trimmed_hb.mp4" type="video/mp4" />
-          <source src="./media/Trimmed_hb.webm" type="video/webm" />
-          <track
-            label="English"
-            kind="subtitles"
-            srclang="en"
-            src="captions/vtt/sintel-en.vtt"
-            default
-          />
-          <track
-            label="Español"
-            kind="subtitles"
-            srclang="es"
-            src="captions/vtt/sintel-es.vtt"
-          />
-        </video>
-        <details>
-          <summary>Video Transcript</summary>
-          <p>placeholder</p>
-        </details>
+              <p>
+                Short on time? Grab a tasty, satisfying bite without the wait.
+                Fresh, fast, and always delicious!
+              </p>
+              <a href="">Learn More</a>
+            </section>
+          </div>
+          <div>
+            <section>
+              <img src="./images/coffee.webp" alt="" width="300" height="175" />
+              <h2>Energizing Drinks</h2>
+              <p>
+                From rich, bold coffee to refreshing teas, our drinks are made
+                to fuel your day.
+              </p>
+              <a href="">Learn More</a>
+            </section>
+          </div>
+          <div>
+            <section>
+              <img
+                src="./images/breakfaset.webp"
+                alt=""
+                width="300"
+                height="175"
+                class="e2e"
+              />
+              <h2>Nourishing Breakfast</h2>
+              <p>
+                Start your morning right with hearty, wholesome breakfast
+                favorites that keep you going.
+              </p>
+              <a href="">Learn More</a>
+            </section>
+          </div>
+          <div>
+            <section>
+              <h2>Delicious Desserts</h2>
+              <img src="./images/shake.webp" alt="" width="300" height="175" />
+              <p>
+                Treat yourself to something sweet—decadent cakes, creamy shakes,
+                and classic diner delights await!
+              </p>
+              <a href="">Learn More</a>
+            </section>
+          </div>
+        </div>
       </main>
     </div>
 
     <div id="footerWrapper">
       <footer>
-        <p>&copy; <span id="year"></span> &bull; Brian Day</p>
+        <div>
+          <section class="contact">
+          <p>Brian Day</p>
+          <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:10525539@uvu.edu">10525539@uvu.edu</a></p>
+          <p><ion-icon name="globe-outline"></ion-icon><a href="https://uvu.edu">https://uvu.edu</a></p>
+          <p><ion-icon name="phone-portrait-outline"></ion-icon><a href="tel:8016641192">801 664 1192</a></p>
+          </section>
+          <section class="social">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </section>
+          <section class="location">
+            <address>
+              8471 West Bowie Drive<br>
+              Magna, UT 84044<br>
+            </address>
+          </section>
+          
+        </div>
+        <p class="legal">&copy; <span id="year"></span> &bull; Brian Day</p>
       </footer>
     </div>
 
     <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

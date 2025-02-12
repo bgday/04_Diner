@@ -5,31 +5,59 @@ footer {
   max-width: 60rem;
   margin: auto;
 }
-
-section {
-  grid-template-columns: 1fr 1fr 1fr;
+#navwrapper {
+  background-color: $accentColor;
 }
+
 nav {
-  ul.navLinks, ul.navLinks.open {
+
+  ul.navLinks,
+  ul.navLinks.open {
     justify-content: flex-end;
-    display:flex;
+    display: flex;
+    background-color: $accentColor;
     li a {
       margin: 0;
       padding: 0.6rem 1rem;
-      border:none;
+      border: none;
+      color: $secondaryColor;
     }
     li.active a {
-      color: $fontColor;
-      text-decoration: underline;
-      text-underline-offset: 12px;
+      background-color:rgba(56, 56, 56, 0.2);
+      border-radius:10px;
+    }
+    li a:hover {
+      background-color:rgba(56, 56, 56, 0.2);
+      border-radius:10px;
     }
   }
 }
 
 #navButton {
-  display:none;
+  display: none;
 }
 
-ul.navLinks li a {
+//MAIN
 
+#mainWrapper {
+  .allCards {
+    div {
+      flex-basis: calc(33.3333% - (($gutter * 2) / 3));
+    }
+    section {
+      height: 100%;
+    }
+  }
 }
+
+#footerWrapper {
+  footer div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    section.location {
+      text-align:end;
+    }
+    }
+  }
+
